@@ -1,5 +1,8 @@
-# lexical-analysis
+# Lexical-analysis
 应用Python完成类Pascal语言的词法分析
+
+- 用于编译原理的学习
+- 对于变量的重复定义有错误提示
 
 
 
