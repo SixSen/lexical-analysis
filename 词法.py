@@ -2,12 +2,15 @@ def lexical_analysis(src):
     """
     词法分析
     """
+    variable = []
     # src = src.replace("\r", " ")
     # src = src.replace("\b", " ")
     # src = src.strip("\n")       # 去除每行结尾的换行符
     # unit = src.split()          # 根据空格进行分割为不同单元
     print("分析结果:")
     for unit in src:
+        global isvar
+        isvar = 0
         print("=============================== line:", src.index(unit)+1)
         for sentence in unit:
             index = unit.index(sentence)
@@ -70,18 +73,37 @@ def lexical_analysis(src):
                                 cur = cur + 1
                             if err_flag:
                                 print(temp, "错误的标识符(不得包含大写字母)")
+                            elif isvar == 1:
+                                if temp not in variable:
+                                    print(temp, "标识符")
+                                    variable.append(temp)
+                                else:
+                                    print(temp, "重复的标识符(错误)")
                             else:
-                                print(temp, "标识符")
+                                if temp in variable:
+                                    print(temp, "使用标识符")
+                                else:
+                                    print(temp, "未定义的标识符(错误)")
                         else:
                             cur = cur + 3
                             print("var  变量定义关键字")
+                            isvar = 1
                     else:
-                        if 'a' <= sentence[cur] <= 'z' or sentence[cur].isdigit():
-                            temp = ""
-                            while 'a' <= sentence[cur] <= 'z' or sentence[cur].isdigit():
-                                temp = temp + sentence[cur]
-                                cur = cur + 1
-                            print(temp, "标识符")
+                        temp = ""
+                        while 'a' <= sentence[cur] <= 'z' or sentence[cur].isdigit():
+                            temp = temp + sentence[cur]
+                            cur = cur + 1
+                        if isvar == 1:
+                            if temp not in variable:
+                                print(temp, "标识符")
+                                variable.append(temp)
+                            else:
+                                print(temp, "重复的标识符(错误)")
+                        else:
+                            if temp in variable:
+                                print(temp, "使用标识符")
+                            else:
+                                print(temp, "未定义的标识符(错误)")
                 elif 'A' <= sentence[cur] <= 'Z':
                     temp = ""
                     while sentence[cur].isalnum():
