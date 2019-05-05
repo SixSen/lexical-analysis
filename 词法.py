@@ -120,7 +120,7 @@ if __name__ == "__main__":
     主程序
     """
     program = []
-    line = input("请输入源程序(输入':q'开始分析):\n")
+    line = input("请输入源程序(新的一行输入':q'开始分析):\n")
     while line != ':q':
         line = line.strip("\n")  # 去除每行结尾的换行符
         words = line.split()  # 根据空格进行分割为不同单元

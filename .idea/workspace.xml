@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f3fbf63-de07-4240-ad04-5cf859d2caf2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/SixSense.xml" afterDir="false" />
+    <list default="true" id="6f3fbf63-de07-4240-ad04-5cf859d2caf2" name="Default Changelist" comment="增加识别定义部分功能，识别标识符的定义与使用">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/词法.py" beforeDir="false" afterPath="$PROJECT_DIR$/词法.py" afterDir="false" />
     </list>
@@ -14,17 +13,17 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/$.coverage" NAME="词法 Coverage Results" MODIFIED="1555670173079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lexical_analysis$.coverage" NAME="词法 Coverage Results" MODIFIED="1555747473882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lexical_analysis$.coverage" NAME="词法 Coverage Results" MODIFIED="1557056943744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/词法.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="103" column="48" lean-forward="true" selection-start-line="103" selection-start-column="48" selection-end-line="103" selection-end-column="48" />
+            <state relative-caret-position="63">
+              <caret line="109" column="25" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="25" />
               <folding>
-                <marker date="1555747214693" expanded="true" signature="146:236" ph="..." />
+                <marker date="1557056985531" expanded="true" signature="146:236" ph="..." />
               </folding>
             </state>
           </provider>
@@ -57,17 +56,38 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="979" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="657" />
+    <option name="width" value="1272" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="lexical-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lexical-analysis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lexical-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lexical-analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lexical-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -133,7 +153,10 @@
       <workItem from="1555646418421" duration="347000" />
       <workItem from="1555669946883" duration="364000" />
       <workItem from="1555726632985" duration="4615000" />
-      <workItem from="1555741969961" duration="4193000" />
+      <workItem from="1555741969961" duration="6381000" />
+      <workItem from="1555753473652" duration="84000" />
+      <workItem from="1557056488012" duration="100000" />
+      <workItem from="1557056633044" duration="915000" />
     </task>
     <task id="LOCAL-00001" summary="提交初代版本">
       <created>1555726757355</created>
@@ -156,28 +179,36 @@
       <option name="project" value="LOCAL" />
       <updated>1555733033032</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="增加识别定义部分功能，识别标识符的定义与使用">
+      <created>1555747819162</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1555747819162</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22985000" />
+    <option name="totallyTimeSpent" value="26272000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <frame x="526" y="0" width="1017" height="840" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.5227882" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.5224192" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32914925" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.8980447" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49731904" weight="0.31005585" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39888424" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32960895" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32867134" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5013405" side_tool="true" visible="true" weight="0.8980447" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.79353493" visible="true" weight="0.33050847" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.20646507" side_tool="true" visible="true" weight="0.33050847" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32867134" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
@@ -217,15 +248,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="提交初代版本" />
     <MESSAGE value="添加显示行号功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加显示行号功能" />
+    <MESSAGE value="增加识别定义部分功能，识别标识符的定义与使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加识别定义部分功能，识别标识符的定义与使用" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/词法.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="103" column="48" lean-forward="true" selection-start-line="103" selection-start-column="48" selection-end-line="103" selection-end-column="48" />
+        <state relative-caret-position="63">
+          <caret line="109" column="25" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="25" />
           <folding>
-            <marker date="1555747214693" expanded="true" signature="146:236" ph="..." />
+            <marker date="1557056985531" expanded="true" signature="146:236" ph="..." />
           </folding>
         </state>
       </provider>
